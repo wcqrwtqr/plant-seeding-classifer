@@ -21,7 +21,7 @@ import timeit
 Specail thanks to the following fellow:
     ASHISHKUMAR ,https://www.kaggle.com/myashish/plant-seedling-classification
     Xingyu Yang , https://www.kaggle.com/xingyuyang/cnn-with-keras
-    
+    Gábor VecseiPlant,https://www.kaggle.com/gaborvecsei/plant-seedlings-fun-with-computer-vision
 '''
 
 start_timing = timeit.timeit()

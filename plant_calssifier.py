@@ -100,7 +100,7 @@ print('label binarizing')
 imgs = np.array([np.array(im) for im in ori_imgs])
 imgs = imgs.reshape(imgs.shape[0], 48, 48, 3) / 255
 lb = LabelBinarizer().fit(ori_label)
-label = lb.transform(ori_label) 
+label = lb.transform(ori_label)
 
 
 # splitting the data 
@@ -136,9 +136,9 @@ earlystop = EarlyStopping(patience=10)
 modelsave = ModelCheckpoint(filepath='model_sharpened_images_extralayer.h5', save_best_only=True, verbose=1)
 train_start_timing = timeit.timeit()
 # training the model
-model.fit(trainX, trainY, 
+model.fit(trainX, trainY,
           batch_size=batch_size,
-          epochs=200, 
+          epochs=200,
           validation_data=(validX, validY),
           callbacks=[annealer, earlystop, modelsave])
 
